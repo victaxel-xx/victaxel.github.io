@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Loot</title>
+</head>
+
+<body>
+	<div class="container">
+		<h2>Loot history</h2>
+		<i data-bind="visible: isLoading" class="fa fa-spinner fa-spin" style="font-size:48px"></i>
+		<table class="table table-hover" id="loot-table">
+			<thead>
+				<tr>
+					<th>Player</th>
+					<th>Date</th>
+					<th>Item</th>
+					<th>Response</th>
+				</tr>
+			</thead>
+			<tbody data-bind="foreach: tableData">
+				<tr>
+					<td><a class="player-link" data-bind="attr: {href: url}, text: player"></a></td>
+					<td data-bind="text: date"></td>
+					<td><a class="item-link" data-bind="attr: {href: itemUrl}, text: item"></a></td>
+					<td data-bind="text: response"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+	<script src="js/loot.js"></script>
+</body>
+
+</html>

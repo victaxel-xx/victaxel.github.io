@@ -1,0 +1,60 @@
+.item-link {
+    text-decoration: none;
+    color: #a335ee;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+
+  .deathknight {
+    color: #C41F3B;
+  }
+  
+  .demonhunter {
+    color: #A330C9;
+  }
+  
+  .druid {
+    color: #FF7D0A;
+  }
+  
+  .hunter {
+    color: #ABD473;
+  }
+  
+  .mage {
+    color: #69CCF0;
+  }
+  
+  .monk {
+    color: #00FF96;
+  }
+  
+  .paladin {
+    color: #F58CBA;
+  }
+  
+  .rogue {
+    color: #D3B53D;
+  }
+  
+  .shaman {
+    color: #0070DE;
+  }
+  
+  .warlock {
+    color: #9482C9;
+  }
+  
+  .warrior {
+    color: #C79C6E;
+  }
+  
+  .priest {
+    color: #000
+  }
